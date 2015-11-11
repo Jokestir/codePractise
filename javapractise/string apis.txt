@@ -1,11 +1,13 @@
 string apis
 ==========
+# best way to think about string is through mcc mnc
 
-
-name.length() -- string ka length bata be
-name.charAt(i-1) -- tere naam ka ithh character kya hai?
-name.substring(i-1) -- ith characters se saare characters
-name.substring(i,j) -- ith character aur jth character ke beech mein saare characters. j excluded. i included.
+1. string ka length bata be 				name.length()
+2. tere naam ka ithh character kya hai?		name.charAt(i-1)
+4. ith characters se saare characters		name.substring(i-1)
+5. ith character aur jth character 			name.substring(i,j)
+ke beech mein saare characters.
+j excluded. i included.
 
 
 
