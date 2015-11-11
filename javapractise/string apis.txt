@@ -1,0 +1,22 @@
+string apis
+==========
+
+
+name.length() -- string ka length bata be
+name.charAt(i-1) -- tere naam ka ithh character kya hai?
+name.substring(i-1) -- ith characters se saare characters
+name.substring(i,j) -- ith character aur jth character ke beech mein saare characters. j excluded. i included.
+
+
+
+
+
+
+
+
+
+assignment:
+
+1. string ke pehle 3 character bata  substring(0,3)
+2. string ke pechle 3 character bata substring(l-i,i)
+3.
