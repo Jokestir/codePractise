@@ -12,7 +12,7 @@ j excluded. i included.
 6. true agar str2 str1 ka substring hai     str1.contains(str2)
 7. true agar str1 str2 se shuru hota hai    str1.startsWith(str2)
 8. true agar str1 str2 se end hota hai		str1.endsWith(str2)    # endsWith more imp than startsWith
-
+9. str1 ke peeche str2 laga do              str1.concat(str2)
 
 
 
