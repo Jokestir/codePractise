@@ -16,6 +16,14 @@ public class stringSub{
 
 		// lesson: first i characters: substring(0,i)
 
+
+		// last three chars
+
+		String lastThree = name.substring(name.length()-3,name.length());
+
+		mconsole.printf("The last three chars:%s\n",lastThree);
+
+		// lesson: last i characters substring(l-i,l)
 	}
 
 
