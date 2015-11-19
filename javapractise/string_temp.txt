@@ -1,0 +1,30 @@
+str1.compareTo(str2)
+=====================
+
+compareto bataega kaunsa string bada hai
+
+
+* 0 return karega agar strings equal hai to
+
+* positive return karega agar str1 > str2
+
+* negative return karega agar str1< str2
+
+* len(str1) - len(str2) if they is no character difference
+
+
+# string ko sort karne mein kaam aaega
+
+# "abcd".compareTo("abc") ==> 1
+
+
+str1.compareToIgnoreCase(str2)
+==============================
+
+ 
+same as above but ignores case.
+
+
+# 'a'.comparToIgnoreCase('A') returns 0.
+
+
