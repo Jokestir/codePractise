@@ -1,0 +1,5 @@
+@ failed to create jvm error 4 -- set JAVA_HOME to point to jdk. and then **restart**
+
+@ **multiDexEnabled true**  put this. other wise it fucking wont work.
+
+@ Could not identify launch activity: Default Activity not found -- declare main launch activity in the AndroidManifestFile. 
