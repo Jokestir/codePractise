@@ -1,20 +1,20 @@
 @ How to set title of an activity?
 
 	Use the **setTitle** api at onCreate
-	
+
 	e.g: setTitle(R.string.activityTitle);
-	
+
 @ How to set the layout of an activity?
-	
+
 	Use the **setContentView** api at onCreate
-	
+
 	e.g: setContentView(R.layout.activity_main)
-	
+
 @ How to set an activity as a default activity?
 
 
 	Add the below code in AndroidManifest.xml
-	
+
 	<activity
         android:name=".Splash"
         android:label="@string/splash_activity_title" >
@@ -23,3 +23,7 @@
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+
+@ What is the package name of the android app? (and hence all java files) ?
+
+	**com.companyname.appname**
