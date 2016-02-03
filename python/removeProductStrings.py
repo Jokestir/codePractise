@@ -12,14 +12,14 @@ duplicates = 0																			# keep count of duplicate string removed
 
 def removeProductDuplicateStringsFromFile(fileName):                                    # function to remove duplicates from fileName
     
-	global duplicates																	# duplicates is global not local
+    global duplicates																	# duplicates is global not local
     
-	#global iterations
+    #global iterations
     
     #iterations = iterations + 1
     
     #print (str(iterations))
-	
+
     filename = open(fileName,mode = 'r+', encoding = 'utf-8')							# open file passed for editing
     path = os.path.dirname(fileName) 													# path of file passed
     newTempFileName = os.path.join(path,"temp.xml")                                     # create a temp file at the same location as file passed
