@@ -1,38 +1,47 @@
 import os
 import glob
 
-#path = os.path.dirname(os.path.abspath(__file__))                                      # current path of the script
-duplicates = 0
-iterations = 0
-def removeProductDuplicateStringsFromFile(fileName):
-    global duplicates
-    global iterations
+#path = os.path.dirname(os.path.abspath(__file__))                                   
+
+
+duplicates = 0																			# keep count of duplicate string removed
+
+
+#iterations = 0                                                                          
+
+
+def removeProductDuplicateStringsFromFile(fileName):                                    # function to remove duplicates from fileName
     
-    iterations = iterations + 1
+	global duplicates																	# duplicates is global not local
     
-    print (str(iterations))
-    filename = open(fileName,mode = 'r+', encoding = 'utf-8')
-    path = os.path.dirname(fileName) 
-    newTempFileName = os.path.join(path,"temp.xml")
-    newfile = open(newTempFileName,mode = 'w+', encoding = 'utf-8')
+	#global iterations
     
-    for line in filename:
+    #iterations = iterations + 1
+    
+    #print (str(iterations))
+	
+    filename = open(fileName,mode = 'r+', encoding = 'utf-8')							# open file passed for editing
+    path = os.path.dirname(fileName) 													# path of file passed
+    newTempFileName = os.path.join(path,"temp.xml")                                     # create a temp file at the same location as file passed
+    newfile = open(newTempFileName,mode = 'w+', encoding = 'utf-8')                     # open temp file for editing
+    
+    for line in filename:																# iterate each line of file passed
         
-        if ("product" in line) and ("tablet" in line or "nosdcard" in line):
+        if ("product" in line) and ("tablet" in line or "nosdcard" in line):			# if the line contains table and product or nosdcard, discard the line 
             duplicates = duplicates + 1
             continue
         else:
-            newfile.write(line)
+            newfile.write(line)															# else copy the line to temp file
             
-    filename.close()
-    newfile.close()
-    os.remove(fileName)
-    os.rename(newTempFileName,fileName)
+    filename.close()																	# close the file passed
+    newfile.close()																		# close temp file
+    os.remove(fileName)																	# delete file passed from the machine
+    os.rename(newTempFileName,fileName)													# rename temp file to file passed
 
 
-for filename in glob.iglob('src/**/*.xml', recursive=True):                          # recursively open xml files in the src folder
-    removeProductDuplicateStringsFromFile(filename)
+for filename in glob.iglob('src/**/*.xml', recursive=True):                          	# recursively open xml files in the src folder
+    removeProductDuplicateStringsFromFile(filename)										# remove duplicate strings
 
-print(str(duplicates) + " strings removed ")
+print(str(duplicates) + " strings removed ")											# print duplicates removed
 
     
