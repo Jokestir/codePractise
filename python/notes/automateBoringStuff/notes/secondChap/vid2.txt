@@ -1,0 +1,78 @@
+
+if statement
+=============
+
+* syntax:       if condition:
+		      statement
+
+
+
+eg:
+
+if myName == 'chirag'
+	print('done')
+
+print('done')
+
+
+
+block
+======
+
+* blocks in python are statements on the same indentation
+
+* block begins when the indentation increases and comes back to the same value when it decreases
+
+* blocks begin only after : statement
+
+
+
+
+if elif statement
+==================
+
+* only one of the if-elif statements is checked. the rest are not even checked
+
+* the order of the staements is important.
+
+
+
+
+bool() function
+=================
+
+* convert to bool
+
+e.g:
+
+bool(0) >> False
+
+bool(42) >> True
+
+bool('String') >> True
+
+bool('') >> False
+
+
+null checks
+===========
+
+
+e.g: 
+
+if name:
+  	print('null condition return')
+
+or 
+
+if bool(name):
+	print('null condition return')
+
+or 
+
+if name == ''
+	print('null condition return')
+
+
+
+

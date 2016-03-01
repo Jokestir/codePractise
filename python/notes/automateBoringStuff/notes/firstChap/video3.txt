@@ -1,0 +1,42 @@
++ input api:
+  ----------
+
+     myName = input() # waits till the user inputs something on the keyboard and stores it in myName variable. 
+
++ len() api: 
+  ---------
+
+    len(myName)  returns 6
+
+
+
++ str()
+  -----
+
+   convert to string
+
++ int()
+  -----
+
+   convert to int
+
++ float()
+  -------
+
+ convert to float
+
+
+
+what did we learn in chapter 1
+===============================
+
+
+6 functions: print , input, len , str, int, float
+
+variable name rules : first char cant be a number. no special character apart from underscore
+
+3**2 : exponential operator
+
+hash tag comments
+
+ 

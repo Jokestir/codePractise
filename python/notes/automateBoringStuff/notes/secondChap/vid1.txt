@@ -1,0 +1,50 @@
+
+
+Boolean values
+==============
+
+* True and False (first letter capitalize)
+
+* A boolean variable can contain only these two values
+
+* Other variables like strings ints or floats can contain infinite values
+
+
+
+Comparison operators
+====================
+
+Six boolean operators in python
+
+
+* >
+
+* <
+
+* ==
+
+* >=
+
+* <=
+
+* !=
+
+
+
+Boolean operators
+=================
+
+Three 
+
+* and (not &&)
+
+* or (not ||)
+
+* not (not !)
+
+----------
+
+myAge =24
+myPet = 'cat'
+
+mypet == 'cat' and myAge > 18  >> True

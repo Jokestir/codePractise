@@ -1,0 +1,41 @@
+os path apis
+============
+
+@
+api 	: os.path.abspath(fileName)
+
+output  : full path of the file including filename
+
+usage   : os.path.abspath(__file__)  will return D:/example.py
+
+@
+api     : os.path.dirname(fileName)
+
+output  : the directory. full path name excluding the last backslash.
+
+usage 	: to get the directory of the file. os.path.dirname(os.abspath(__file)) will return D:\
+
+@
+
+api     : os.path.basename(fileName)
+
+output  : return only the string after the last backslash.
+
+usage   : to find the filename. os.path.basename(os.getcwd()) will return  chirag.ahuja
+
+
+@
+
+api     : os.getcwd()
+
+output  : get current working directory.
+
+usage   : os.path.getcwd() will return C:\users\chirag.ahuja
+
+@
+
+api     : os.path.splitext(file)
+
+output  : list containing the extension and rest of the path
+
+usage   : to find the extension of a file

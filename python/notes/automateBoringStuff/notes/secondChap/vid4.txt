@@ -1,0 +1,36 @@
+for loop
+========
+
+* for loops iterates for a fixed number of times
+
+for iterating_var in sequence:
+	do_something()
+
+
+
+* range(i,j) returns a integer sequence from i to j-1
+
+or range(i,j,step)
+
+
+e.g: 
+
+1) for letter in 'Python'
+	print(letter)
+
+  outputs to each letter of Python
+
+2) for fruits in ['banana','apple','mango']
+	print(fruits)
+
+ outputs banana apple and mango
+
+3) for integer in range(10,20)
+	print(str(integer)) 
+
+	outputs prints integers from 10 to 20 (excluding 20)
+
+4) for integer in range(10)
+	print (integer) 
+	
+	outputs prints from 0 to 9

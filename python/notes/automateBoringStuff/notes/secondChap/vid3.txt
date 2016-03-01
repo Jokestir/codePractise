@@ -1,0 +1,17 @@
+while loop
+==========
+
+* executes the block of code again and again until the while condition is true
+
+
+break statement
+===============
+
+* breaks out from the loop and onto next line
+
+
+continue statement
+==================
+
+* continues to next iteration from that line
+

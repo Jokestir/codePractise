@@ -1,0 +1,49 @@
++ print api: print('hello world') or print("hello world")
+
++ gist.github.com - to share snippets of code like pastebin
+
++ expression: consists of values and operators. always evaluates to a single value (no variables)
+  ----------
+
++ calculator: 3 * 5, 2 + 4, 4/2, 4//2 (integer division),  3**2 (exponent), 3%2 (modulus operator)
+
++ BODMAS applies
+
++ data types: category of values. every value belongs to exatly one data type
+  ----------
+	
+	integers: -2,-1,23,24
+
+	floats:3.14, 24.0 
+
+	string : 'hello' 'bob' 
+
++ string apis
+  -----------
+
+    'alice' + 'wonderland' = alicewonderland
+	
+    'alice' * 2            = 'alicealice'
+
+    'alice' + 'wonderland' * 2 = 'alicewonderlandwonderland'
+
+
++ variables : variables are boxes to hold data types
+  ---------
+
+             e.g: var = 2
+
+
++ variable name rules
+  --------------------
+		      
+                      should not start with a number
+                      no special characters apart from undersocre
+		      
+
+
+
++ comments:   # tag comments
+  ---------
+
+             very important for understanding code. put one comment per instruction.
