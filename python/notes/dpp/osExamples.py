@@ -1,3 +1,5 @@
+# Q. find out path of where the code is run from
+
 import os
 
 print('')
