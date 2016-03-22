@@ -1,16 +1,21 @@
-@ How to set title of an activity?
+q. What is the package name of the android app? (and hence all java files) ?
+
+	**com.companyname.appname**
+	
+
+q. How to set title of an activity?
 
 	Use the **setTitle** api at onCreate
 
 	e.g: setTitle(R.string.activityTitle);
 
-@ How to set the layout of an activity?
+q. How to set the layout of an activity?
 
 	Use the **setContentView** api at onCreate
 
 	e.g: setContentView(R.layout.activity_main)
 
-@ How to set an activity as a default activity?
+q. How to set an activity as a default activity?
 
 
 	Add the below code in AndroidManifest.xml
@@ -24,6 +29,17 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
 
-@ What is the package name of the android app? (and hence all java files) ?
 
-	**com.companyname.appname**
+q. how to change the launcher logo of an app?
+
+	In android studio, right click on app folder. New > Image asset > launcher icon.
+
+	(or)
+
+	change android:icon field in the AndroidManifest.xml file.(copy the image in the android:icon path. copy and change)
+
+
+q. How to make the make the launcher icon circular?
+
+	use http://romannurik.github.io/AndroidAssetStudio/ and change the icon.(or) through new image asset select circular shape
+	
