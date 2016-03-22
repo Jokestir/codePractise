@@ -3,3 +3,8 @@
 @ **multiDexEnabled true**  put this. other wise it fucking wont work.
 
 @ Could not identify launch activity: Default Activity not found -- declare main launch activity in the AndroidManifestFile. 
+
+@ Error:Unable to start the daemon process: could not reserve enough space for object heap.Please assign more memory to Gradle in the project's gradle.properties file.
+For example, the following line, in the gradle.properties file, sets the  maximum Java heap size to 1,024 MB:
+
+Running out of ram. Decrease max size by copying the following statement gradle.properties: org.gradle.jvmargs=-Xmx1024morg.gradle.jvmargs=-XX\:MaxHeapSize\=256m -Xmx256m
