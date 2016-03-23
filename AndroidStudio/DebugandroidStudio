@@ -16,3 +16,8 @@ q. Error:Unable to start the daemon process: could not reserve enough space for 
 q. sync android studio and github?
 
 -- vcs > import version control > share on github.
+
+q. what is the diff between applicationId and packageName?
+
+-- both applicationId and packageName are used to uniqely identify the app. But if you have different flavors of the app (like pro and free)... then applciationID is diff but packageName is diff
+	packageName is used for accessing R class in the source. applicationId is used for the OS and Google Play store to uniqely identify the app.
