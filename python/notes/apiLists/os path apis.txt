@@ -49,3 +49,5 @@ Explore contents
 9. os.path.isdir(path)   : returns False if the path is a folder
 
 10. os.path.exists(path)  : returns True if the path exits
+
+11. os.walk()             : return a 3 tuple for every loop (paths,dirs,files)
