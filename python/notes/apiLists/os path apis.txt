@@ -2,11 +2,11 @@ Get path apis
 ==============
 
 
-os.path.abspath(fileName)                      : full path of the file including filename
+1. os.path.abspath(fileName)                      : full path of the file including filename
 
 # os.path.abspath(__file__)  will return D:/example.py
 
-os.getcwd()                                     : get current working directory.
+2. os.getcwd()                                     : get current working directory.
 
 # os.path.getcwd() will return C:\users\chirag.ahuja
 
@@ -14,17 +14,17 @@ os.getcwd()                                     : get current working directory.
 Split path names
 ================
 
-os.path.dirname(fileName)                      : the directory. full path name excluding the last backslash
+3. os.path.dirname(fileName)                      : the directory. full path name excluding the last backslash
 
 # to get the directory of the file. os.path.dirname(os.abspath(__file)) will return D:\
 
 
-os.path.basename(fileName)                      : return only the string after the last backslash.
+4. os.path.basename(fileName)                      : return only the string after the last backslash.
 
 # to find the filename. os.path.basename(os.getcwd()) will return  chirag.ahuja
 
 
-os.path.splitext(file)                           : list containing the extension and rest of the path
+5. os.path.splitext(file)                           : list containing the extension and rest of the path
 
 #  find the extension of a file
 
@@ -33,7 +33,7 @@ Join path names
 ===============
 
 
-os.path.join(folder1,folder2) : joins path intellligently 
+6. os.path.join(folder1,folder2) : joins path intellligently 
 
 usage : to create a new file at the current location or to combine paths in platfornm independent manner
 
@@ -42,10 +42,10 @@ Explore contents
 =================
 
 
-os.listdir(path)      : list all the contents in the path
+7. os.listdir(path)      : list all the contents in the path
 
-os.path.isfile(path)  : returns True if path if a file
+8. os.path.isfile(path)  : returns True if path if a file
 
-os.path.isdir(path)   : returns False if the path is a folder
+9. os.path.isdir(path)   : returns False if the path is a folder
 
-os.path.exists(path)  : returns True if the path exits
+10. os.path.exists(path)  : returns True if the path exits
