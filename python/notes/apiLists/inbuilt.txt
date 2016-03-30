@@ -1,6 +1,7 @@
-input() : take input from the user
+input() 	: take input from the user
 
-len()   : find length of the object (string, list etc.)
+len()   	: find length of the object (string, list etc.)
 
-print() : print output to user
+print() 	: print output to user
 
+sys.exit()  : Exit from the python app.
