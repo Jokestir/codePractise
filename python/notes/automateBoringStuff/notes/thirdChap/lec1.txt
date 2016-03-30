@@ -1,0 +1,44 @@
+module
+======
++ A module is a set of related functions. You can import using import statement.
+
+					
+			- import math, rand 							# import rand and math module
+			
+			- from math import factorial 						# with from you only need to factoial(5)
+			
+		
+
+
+Third party modules
+-------------------
+
++ use pip to install third party modules
+
+			- pip install requests
+
+
+
+Random module 
+-------------
+
++ Contains random number generation functions
+  
+		- random.randint(1,100)                                                          #generate random integer between  1 and 100
+
+		- random.uniform(1,100)                                                          # generate random float beteen 1 and 100
+
+
+
+pyperclip module
+=================
+
++ pyperclip.copy(text) : copy text  to clipboard
+
++ pyperclip.paste()    : paste from clipboard.
+	      		
+
+
+
+
+ 
