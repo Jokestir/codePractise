@@ -1,0 +1,6 @@
+input() : take input from the user
+
+len()   : find length of the object (string, list etc.)
+
+print() : print output to user
+
