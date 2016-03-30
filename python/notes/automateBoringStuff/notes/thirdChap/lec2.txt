@@ -1,0 +1,23 @@
+Funtions
+=========
++ Syntax:
+
+def funcName(arguments):
+	body
+
+
++ all functions have return values. Functions without return statement have None return value.
+			
+				- print() has None return value
+
+
+
+Keyword arguments
+==================
+
++ Optional arguments
+
+		- print('hello',end = '')       # ends with nothing instead of new line
+
+		- print('hello','world','bye',sep = '.')  # words are separated by dot rather than space 
+  
