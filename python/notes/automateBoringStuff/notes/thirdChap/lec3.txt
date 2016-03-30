@@ -1,0 +1,11 @@
+Global and local scope
+======================
+
+
++ Global variables can be used inside functions using global paratmeter
+
++ Local variables cant be used in global scope. Local variables cant be used in other funtions
+
++ If there is no assignment in the local scope, python will use the global variable.
+
+# global variable will be used only if a) global keyword is used. b) no assignment in local scope has been made
