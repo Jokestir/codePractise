@@ -1,0 +1,32 @@
+Exception Handling with try-except block
+========================================
+
++ exceptions cause the app to crash. so use try...except statements
+
++ Syntax:
+
+	try:
+	         <problem_code>
+	
+	except ErrorName:
+	      
+	         <log or print>
+
+	else:
+		else_block
+
+	finally:
+
+		finally_bloack
+
++ The code in the try block is executed. except block is only executed if there is an exception. else block is executed only if ther is no exception. finally block is always executed
+
+
+
++ raise keyword is used to raise a runtime user defined exception
+
+	if num < 0:
+		raise Exception('why did you enter a negative number?')
+
++ assert num>0, "why did you enter a negative number" # assert crasher the app
+
