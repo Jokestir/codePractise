@@ -1,0 +1,80 @@
+For loop with lists
+===================
+
+
+
+* For loop *always* iterates over a sequence
+
+
+Example Problems
+----------------
+
+
+1. 
+
+	Q. Print natural numbers from 0 to 100
+
+        A. for i in range(101):
+		print(i)
+
+
+2. 
+
+
+	Q. Create a list of even numbers from 0 to 100
+
+	A. list(range(0,101,2))   # range is an object and not a list
+
+
+3. 
+
+
+	Q. Write a function which accepts a list and prints out the elements including the index
+
+
+		def printList(List):
+                	for i in range(len(List)):                                # range(len(List)) is commonly used to iterate over a list
+                		print(str(i) + "th element is: " + List[i])
+
+
+
+
+Multiple assignments
+---------------------
+
+### Example code
+
+
+
+1.
+
+test = ['medium','red','sour']
+
+size, color, taste = test                # size gets assigned 'medium', color gets assigned 'red', taste gets assigned 'sour'
+
+
+2. 
+
+a,b = b,a			        # swaps two objects a and b
+
+
+
+Augmented assignment
+--------------------
+
+
+* Used to update the variable
+
+
+	e.g: spam += spam   --> spam = spam + 1
+
+	     spam *= 2      --> spam = spam * 2
+
+	     spam /= 2      --> spam = spam + 2
+ 
+             spam -=1       --> spam = spam -1
+
+	     spam %=2       --> spam = spam % 2
+
+
+
