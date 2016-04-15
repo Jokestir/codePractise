@@ -1,0 +1,24 @@
+String problems
+----------------
+
+
+Q. Print the third letter of the string spam =  "hello"
+
+A. spam[2]
+
+
+Q. Check if str1 is a substring of str2
+
+A. str1 in str2
+
+
+Q. Print all the letters of the strings
+
+A. for letter in str:
+           print(letter)
+
+Q. Create a new list with same contents as list1?
+
+A. list2 = copy.deepcopy(list1)        # note that list2= list1 does not clone
+
+
