@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">W80211</string>
+    <string name="getChannelListButtonName">Get channel List</string>
 </resources>
