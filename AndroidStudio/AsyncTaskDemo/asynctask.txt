@@ -1,0 +1,45 @@
+AsyncTask
+---------
+
+
++ Used for heavy tasks. The results of these tasks can be passed to UI.
+
+
+Advantages
+-----------
+
++ Need to create threads, handlers etc.
+
++ Use only for task which requires 3-8 seconds
+
++ Dont use for network requests, imageLoading.  
+
+
+How to use it
+--------------
+
+1. Inherit AsyncTask class and override these methods: doInBackground, onPreExecute, onPostExecute. 
+
+
+		+ doInBackground - new thread. Contains heavy taks. Does not have access to UI.
+			
+		+ onPreExecute   - perfomed before doInbackground. has access to MainUI
+
+		+ onPostExecute  - performed after doInbackground. has access to UI.
+
+2. 
+
+
+
+Misc
+----
+
++ dont directly call onbackgroud,onpreexecute,onpostexecute
+
++ Async object should be created in UI thread
+
++ There should be only one asynctask.execute statement
+
++ execute method should be invoked in teh UI thread
+
+

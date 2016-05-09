@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import java.lang.reflect.*;
 import java.util.ArrayList;
-import java.util.Objects;
 
 import android.net.wifi.WifiManager;
 import android.content.Context;
@@ -61,7 +60,7 @@ public class MainActivity extends Activity {
                 try {
                     // load the class
 
-                    Class wifiChannelClass = Class.forName("android.net.wifi.WifiChannel");
+                    //Class wifiChannelClass = Class.forName("android.net.wifi.WifiChannel");
 
 
 
@@ -101,9 +100,9 @@ public class MainActivity extends Activity {
 
                     }
 
-                    String channels24ghz = TextUtils.join(", ", channels24ghzList);
+                    //String channels24ghz = TextUtils.join(", ", channels24ghzList);
 
-                    String channels5ghz = TextUtils.join(", ", channels5ghzList);
+                    //String channels5ghz = TextUtils.join(", ", channels5ghzList);
 
                     //channelString = channelString.substring(0,channelString.length()-2);
 
