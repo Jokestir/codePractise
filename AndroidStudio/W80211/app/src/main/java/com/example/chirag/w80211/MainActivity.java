@@ -28,11 +28,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 
 
+        // create the content of the app
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // channellists
         channels24ghzList = new ArrayList<String>();
         channels5ghzList = new ArrayList<String>();
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        // create UI objects
         mWifiManger = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
         Button getChannel = (Button) findViewById(R.id.getChannelButton);
         final TextView channel24ghzTitle = (TextView) findViewById(R.id.channel24ghzTitle);
@@ -58,20 +62,7 @@ public class MainActivity extends Activity {
                 // reflection code
 
                 try {
-                    // load the class
 
-                    //Class wifiChannelClass = Class.forName("android.net.wifi.WifiChannel");
-
-
-
-
-                    // create an instance of
-
-
-                   //Object WifiChannel = wifiChannelClass.newInstance();
-
-
-                    // find getChannelList() method from Wifimanager
 
                     Method getChannelListMethod = WifiManager.class.getMethod("getChannelList",null);
 
@@ -99,23 +90,6 @@ public class MainActivity extends Activity {
 
 
                     }
-
-                    //String channels24ghz = TextUtils.join(", ", channels24ghzList);
-
-                    //String channels5ghz = TextUtils.join(", ", channels5ghzList);
-
-                    //channelString = channelString.substring(0,channelString.length()-2);
-
-                    //Log.e("CHIRAG"," " + getChannelListMethod.invoke(mWifiManger,null).getClass());
-
-
-
-                    //channelString = wifichannels.toString();
-
-
-
-
-
 
                 }
 
