@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static  final String EXTRA_MESSAGE = "com.example.chiragahuja.startanotheractivity.message";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Toast.makeText(getApplicationContext(),"Button pressed",Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(MainActivity.this,secondary.class);
+
+                intent.putExtra(EXTRA_MESSAGE, "hello second activity");
+
+                startActivity(intent);
+
+
+
 
             }
         };
