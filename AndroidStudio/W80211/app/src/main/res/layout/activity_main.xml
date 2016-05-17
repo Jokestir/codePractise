@@ -16,13 +16,12 @@
         android:text="@string/getChannelListButtonName"
         android:id="@+id/getChannelButton"
         android:layout_gravity="center"
-
-
         android:background="@color/butonColor"
         android:padding="10dp"
         android:layout_marginBottom="120dp"
         android:textColor="#FFFFFF"
         android:typeface="serif"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,4 +58,13 @@
         android:typeface="serif"
         android:id="@+id/channels5ghzList"
         android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getCountry"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:typeface="serif"
+        android:textColor="#000000"
+        />
 </LinearLayout>

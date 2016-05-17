@@ -17,12 +17,7 @@ import com.example.chirag.w80211.GetChannelListAsyncTask;
 
 public class MainActivity extends Activity {
 
-    WifiManager mWifiManger;
-    ArrayList<String> channels24ghzList;
-    ArrayList<String> channels5ghzList;
-
     GetChannelListAsyncTask getChannelListAsyncTask;
-
 
 
     @Override
@@ -51,9 +46,4 @@ public class MainActivity extends Activity {
 
         getChannel.setOnClickListener(oclGetChannelBtn);
     }
-
-
-
-
-
 }
