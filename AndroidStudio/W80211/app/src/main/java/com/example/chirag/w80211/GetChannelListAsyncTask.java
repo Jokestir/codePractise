@@ -1,9 +1,11 @@
 package com.example.chirag.w80211;
 
+import android.Manifest;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.content.Context;
 import android.net.wifi.WifiManager;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -16,8 +18,7 @@ import java.util.ArrayList;
 public class GetChannelListAsyncTask extends AsyncTask{
 
 
-    /******* global objects in class
-    ****/
+    /******* global objects in class****/
 
 
     private static String TAG = "Beethoven";
@@ -33,11 +34,13 @@ public class GetChannelListAsyncTask extends AsyncTask{
     TextView channels24ghz;
     TextView channel5ghzTitle;
     TextView channels5ghz;
+    TextView getCountry;
+
+    String country;
 
 
 
-
-
+    /********** Constructor*********/
 
     public GetChannelListAsyncTask(Context context) {
         super();
@@ -50,10 +53,11 @@ public class GetChannelListAsyncTask extends AsyncTask{
 
         //initialize UI
 
-        TextView channel24ghzTitle = (TextView) this.appContext.findViewById(R.id.channel24ghzTitle);
-        TextView channels24ghz = (TextView) this.appContext.findViewById(R.id.channels24ghzList);
-        TextView channel5ghzTitle = (TextView) this.appContext.findViewById(R.id.channel5ghzTitle);
-        TextView channels5ghz  = (TextView) this.appContext.findViewById(R.id.channels5ghzList);
+        channel24ghzTitle = (TextView) this.appContext.findViewById(R.id.channel24ghzTitle);
+        channels24ghz = (TextView) this.appContext.findViewById(R.id.channels24ghzList);
+        channel5ghzTitle = (TextView) this.appContext.findViewById(R.id.channel5ghzTitle);
+        channels5ghz  = (TextView) this.appContext.findViewById(R.id.channels5ghzList);
+        getCountry = (TextView) this.appContext.findViewById(R.id.getCountry);
 
 
     }
@@ -63,9 +67,20 @@ public class GetChannelListAsyncTask extends AsyncTask{
     protected void onPreExecute() {
         super.onPreExecute();
 
-        // clear channel list everytime
-        channels5ghzList.clear();
-        channels24ghzList.clear();
+
+        // initialize arraylist
+
+        channels24ghzList = new ArrayList<String>();
+        channels5ghzList = new ArrayList<String>();
+
+
+
+        // clear channel list
+
+        /*if(channels5ghzList != null && channels24ghzList != null) {
+            channels5ghzList.clear();
+            channels24ghzList.clear();
+        }*/
     }
 
     @Override
@@ -76,6 +91,14 @@ public class GetChannelListAsyncTask extends AsyncTask{
 
             Method getChannelListMethod = WifiManager.class.getMethod("getChannelList");
             ArrayList<?> listOfWifiChannelObjects = (ArrayList)getChannelListMethod.invoke(mWifiManager,null);
+
+            //Method getCountryMethod = WifiManager.class.getMethod("getCountryCode");
+
+
+
+
+            //country = (String) getCountryMethod.invoke(mWifiManager,null);
+            //Log.e(TAG,"Country:" + country);
 
             for (Object wifichannelObject : listOfWifiChannelObjects){
 
@@ -107,6 +130,9 @@ public class GetChannelListAsyncTask extends AsyncTask{
         channels24ghz.setText(android.text.TextUtils.join(", ", channels24ghzList));
         channel5ghzTitle.setText("5 Ghz channels");
         channels5ghz.setText(android.text.TextUtils.join(", ", channels5ghzList));
+
+        //getCountry.setText(country);
+
     }
 }
 
