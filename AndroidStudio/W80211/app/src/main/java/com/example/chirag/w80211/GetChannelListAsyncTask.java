@@ -2,6 +2,7 @@ package com.example.chirag.w80211;
 
 import android.Manifest;
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.content.Context;
 import android.net.wifi.WifiManager;
@@ -9,6 +10,7 @@ import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.net.wifi.WifiInfo;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -35,7 +37,10 @@ public class GetChannelListAsyncTask extends AsyncTask{
     TextView channel5ghzTitle;
     TextView channels5ghz;
     TextView getCountry;
-
+    TextView countryCodeTitle;
+    TextView MacAddressTitle;
+    TextView MACID;
+    String macAddress;
     String country;
 
 
@@ -58,6 +63,11 @@ public class GetChannelListAsyncTask extends AsyncTask{
         channel5ghzTitle = (TextView) this.appContext.findViewById(R.id.channel5ghzTitle);
         channels5ghz  = (TextView) this.appContext.findViewById(R.id.channels5ghzList);
         getCountry = (TextView) this.appContext.findViewById(R.id.getCountry);
+        countryCodeTitle = (TextView) this.appContext.findViewById(R.id.CountryCodeTitle);
+
+
+        MacAddressTitle = (TextView) this.appContext.findViewById(R.id.CountryCodeTitle);
+        MACID = (TextView) this.appContext.findViewById(R.id.CountryCodeTitle);
 
 
     }
@@ -86,18 +96,23 @@ public class GetChannelListAsyncTask extends AsyncTask{
     @Override
     protected Object doInBackground(Object[] objects) {
 
+
+        WifiInfo wifiInfo= mWifiManager.getConnectionInfo();
+
+        macAddress = wifiInfo.getMacAddress();
+
         // reflection code to populate lists
         try{
 
             Method getChannelListMethod = WifiManager.class.getMethod("getChannelList");
             ArrayList<?> listOfWifiChannelObjects = (ArrayList)getChannelListMethod.invoke(mWifiManager,null);
 
-            //Method getCountryMethod = WifiManager.class.getMethod("getCountryCode");
+            Method getCountryMethod = WifiManager.class.getMethod("getCountryCode");
 
 
 
 
-            //country = (String) getCountryMethod.invoke(mWifiManager,null);
+            country = (String) getCountryMethod.invoke(mWifiManager,null);
             //Log.e(TAG,"Country:" + country);
 
             for (Object wifichannelObject : listOfWifiChannelObjects){
@@ -129,9 +144,35 @@ public class GetChannelListAsyncTask extends AsyncTask{
         channel24ghzTitle.setText("2.4ghz channels");
         channels24ghz.setText(android.text.TextUtils.join(", ", channels24ghzList));
         channel5ghzTitle.setText("5 Ghz channels");
-        channels5ghz.setText(android.text.TextUtils.join(", ", channels5ghzList));
 
-        //getCountry.setText(country);
+
+        if(channels5ghzList.isEmpty()) {
+            channels5ghz.setTextColor(Color.rgb(200,0,0));
+            channels5ghz.setText("NA");
+        }
+        else {
+            channels5ghz.setText(android.text.TextUtils.join(", ", channels5ghzList));
+        }
+
+
+        countryCodeTitle.setText("Country Code");
+        MacAddressTitle.setText("MACID");
+
+        // display country
+        if (country!=null){
+            getCountry.setText(country);
+        }
+
+        else{
+            getCountry.setText("null");
+
+        }
+
+        //display MACID
+
+        MACID.setText(macAddress);
+
+
 
     }
 }
