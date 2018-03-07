@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <EditText
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameEditText"
+        android:hint="Name"
+        android:layout_marginBottom="8dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        style="@style/headerstyle"
+        android:id="@+id/toppingstextview"
+        android:text="@string/toppings_title_txtview"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/darker_gray"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whipped_cream_checkbox_text"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="24dp"
+        android:onClick="setWhippedCream"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choco_dip_checkbox_text"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="24dp"
+        android:onClick="setChocoButton"/>
+    <TextView
+        style="@style/headerstyle"
+        android:id="@+id/quantity_title"
+        android:layout_marginBottom="8dp"
+        android:text="@string/quantity_caps_title"
+        android:textColor="@android:color/darker_gray"
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/incrementbyonebutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="-"
+        android:onClick="decrementQtyByOne"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantity_textView"
+        android:layout_marginBottom="8dp"
+        android:text="1"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/decrementbyonebutton"
+        android:text="+"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="incrementQtyByOne"/>
+</LinearLayout>
+
+    <TextView
+
+        style="@style/headerstyle"
+        android:id="@+id/price_title"
+        android:layout_marginBottom="8dp"
+        android:text="@string/order_summary_title"
+        android:textColor="@android:color/darker_gray" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_textView"
+        android:layout_marginBottom="8dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_capital"
+        android:onClick="submitOrder"/>
+</LinearLayout>
+</ScrollView>

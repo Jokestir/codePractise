@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <question id="1">
+        <questiontext>Which among these were Voldemort's horcruxes? </questiontext>
+        <optionstype>CheckBoxes</optionstype>
+        <option id="1">Diadem</option>
+        <option id="2">Nagini</option>
+        <option id="3">Gryffindor's Sword</option>
+        <answer>1</answer>
+        <answer>2</answer>
+    </question>
+
+    <question id="2">
+        <questiontext>How many horcruxes did voldemort have?</questiontext>
+        <optionstype>FreeText</optionstype>
+        <answer>8</answer>
+    </question>
+
+    <question id="3">
+        <questiontext>Who Killed Albus Dumbledore?</questiontext>
+        <optionstype>Radio</optionstype>
+        <option id="1">Voldemort</option>
+        <option id="2">Severus Snape</option>
+        <option id="3">Grindelwald</option>
+        <answer>2</answer>
+    </question>
+
+    <question id="4">
+        <questiontext>What was the name of Hogwarts caretaker Argus Finch's cat? </questiontext>
+        <optionstype>Radio</optionstype>
+        <option id="1">Crookshanks</option>
+        <option id="2">Mrs Norris</option>
+        <option id="3">Arabella Fig</option>
+        <answer>3</answer>
+    </question>
+
+    <question id="5">
+        <questiontext>What is the middle name of Albus Dumbledore?</questiontext>
+        <optionstype>Radio</optionstype>
+        <option id="1">Marvolo</option>
+        <option id="2">Percival</option>
+        <option id="3">Kendra</option>
+        <answer>2</answer>
+    </question>
+
+    <question id="6">
+        <questiontext>Who freed Dobby the House Elf by giving him a sock?</questiontext>
+        <optionstype>Radio</optionstype>
+        <option id="1">Hermione</option>
+        <option id="2">Draco Malfoy</option>
+        <option id="3">Harry Potter</option>
+        <answer>3</answer>
+    </question>
+
+    <question id="7">
+        <questiontext>What shape did Harry Potters patronus take?</questiontext>
+        <optionstype>Radio</optionstype>
+        <option id="1">Horse</option>
+        <option id="2">Stag</option>
+        <option id="3">Unicorn</option>
+        <answer>2</answer>
+    </question>
+
+</resources>

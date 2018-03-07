@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_color">#78909C</color>
+    <color name="primary_dark_color">#263238</color>
+    <color name="tan_background">#FFF7DA</color>
+    <color name="menu_localsongs">#3F51B5</color>
+    <color name="menu_favoritesongs">#379237</color>
+    <color name="menu_settings">#F44336</color>
+    <color name="menu_nowplaying">#795548</color>
+</resources>

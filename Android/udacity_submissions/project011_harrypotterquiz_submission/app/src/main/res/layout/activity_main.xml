@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/horcrux_identify_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Q1. Which among these were Voldemort's horcruxes? Select all that apply"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/ques1_optionslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/ques1_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diadem" />
+
+            <CheckBox
+                android:id="@+id/ques1_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nagini" />
+
+            <CheckBox
+                android:id="@+id/ques1_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gryffindor's Sword" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/horcrux_qty_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:text="Q2. How many horcruxes did voldemort have? Enter an integer below."
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/horcrux_qty_editext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:hint="Enter an integer number of horcruxes"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dumblee_kill_ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:text="Q3. Who Killed Albus Dumbledore?"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup
+            android:id="@+id/dumblee_killer_options_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp">
+
+            <RadioButton
+                android:id="@+id/voldemort_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voldemort" />
+
+            <RadioButton
+                android:id="@+id/snape_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snape" />
+
+            <RadioButton
+                android:id="@+id/grindelwald_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gellert Grindelwald" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/argus_finch_cat_ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:text="Q4. What was the name of Hogwarts caretaker Argus Finch's cat?"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup
+            android:id="@+id/argus_finchcat_options_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp">
+
+            <RadioButton
+                android:id="@+id/crookshanks_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crookshanks" />
+
+            <RadioButton
+                android:id="@+id/norris_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mrs Norris" />
+
+            <RadioButton
+                android:id="@+id/arabellafig_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arabella Fig" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/harry_patronus_shape_ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:text="Q5. What shape did Harry Potters patronus take?"
+            android:textColor="@android:color/black" />
+
+
+        <RadioGroup
+            android:id="@+id/harry_patronushape_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp">
+
+            <RadioButton
+                android:id="@+id/stag_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stag" />
+
+            <RadioButton
+                android:id="@+id/horse_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horse" />
+
+            <RadioButton
+                android:id="@+id/arabella_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unicorn" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/resultsummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/submit_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="64dp"
+            android:onClick="grade"
+            android:text="SUBMIT &amp; GRADE" />
+    </LinearLayout>
+</ScrollView>

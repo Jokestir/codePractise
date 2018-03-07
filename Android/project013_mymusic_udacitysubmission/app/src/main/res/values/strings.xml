@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">My Music</string>
+    <string name="localsongs_activitydescription">The app will scan the local disk for all audio media and display it here in a linear layout. The external storage directory can be gotten using Environment.getExternalStorageDirectory(). Recursively visit all the files in this directory and subdirectory and it can be checked whether it ends with certain extension using String endsWith api. Below are dummy sample songs </string>
+    <string name="localsamplesong_1">Sample Song 1</string>
+    <string name="localsamplesong_2">Sample Song 2</string>
+    <string name="menu_localsongs_txtview">Local Songs</string>
+    <string name="menu_settings_activity">Settings</string>
+    <string name="account_info">Account Information</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="manage_Download">Manage Downloads</string>
+    <string name="manage_payments">Manage Payments</string>
+    <string name="playlistsongs1">Favorite Song 1</string>
+    <string name="nowplayingsong">Now Playing Song: </string>
+    <string name="payment_instructions_api">To implement payments related functionality, we can use Google Pay API. To add Google pay api to the app, the below steps can be followed
+
+\n1. Enable gms wallet api in androidmanifest.xml
+
+\n2. Create an instance of PaymentsClient class
+
+\n3. Implement the isReadyToPay and create the createPaymentDataRequest method. specify the allowed payment methods using addAllowedPaymentMethods
+
+\n4. Create PaymentDataRequest  object
+
+\n5. Parse the PaymentData object to obtain payment credentials that can be charged with your payment provider
+    </string>
+    <string name="nowplaying_menuitem">Now Playing</string>
+    <string name="current_song">Current Playing Song</string>
+    <string name="backto_nowplaying">Go to Now Playing</string>
+    <string name="backto_mainmenu">Back to Main Menu</string>
+    <string name="now_activity_explanation">This activity will display the current playing audio and its state. Ideally, on clicking a song the app should launch this activity. The class android.media.MediaPlayer contains the necessary apis to control playback of audio files. The Mediaplayer class can be instantiated using the create() factory method. It should be possible to pause the current audio file using methods like pause(), seekTo(),reset() etc. </string>
+    <string name="mainactvitiy_summary">This is the main menu displaying four options for the user. The first menu dipsplays all the songs on the device, the second menu displays all the songs in the playlist, the third option is the now playing media and fourth option re-directs to settings which contains the payment settings as well.</string>
+    <string name="settings_summary">This is settings activity. From here, the user should ideally be able to view his account information, clear and reset caches, configure download settings and manage payments.</string>
+    <string name="playlist_desc">This activity contains all the songs added to the playlist.  The user should ideally have the option of adding a song to the playlist. Think of playlist as the container for your favorite songs.</string>
+    <string name="menu_playlistsongs_txtview">Playlist</string>
+    <string name="mainactvitiy_label">Main Activity</string>
+    <string name="localactiv_summary">Local Songs</string>
+    <string name="playlistactive_label">Playlist</string>
+    <string name="nowplaying_desc">Now Playing</string>
+    <string name="settingsact_desc">Settings</string>
+    <string name="paymentactive_desc">Payments</string>
+</resources>
